@@ -85,10 +85,10 @@ window.onload = function() {
   // creates the initial circles on load and resize
   function init() {
     circleArray = [];
-    for (var i = 0; i < 120; i++) {
+    for (var i = 0; i < (canvas.width + canvas.height)/ 10; i++) {
       var radius = Math.random() * 15 + 5; // creates radius between 5 and 20
-      var x = Math.random() * (innerWidth - radius * 2) + radius;
-      var y = Math.random() * (innerHeight - radius * 2) + radius;
+      var x = Math.random() * (canvas.width - radius * 2) + radius;
+      var y = Math.random() * (canvas.height - radius * 2) + radius;
       var dx = (Math.random() - 0.5) * 2; // creates change of x from -1 to 1
       var dy = (Math.random() - 0.5) * 2; // creates change of y from -1 to 1
 
@@ -103,6 +103,17 @@ window.onload = function() {
     for(var i=0; i<circleArray.length; i++) {
       circleArray[i].update();
   }
+
+  ctx.font = "120px Overpass";
+  ctx.fillStyle = "black";
+  var text = "JJ Spetseris";
+  ctx.fillText(text, canvas.width/3, canvas.height/2)
+
+  ctx.font = "80px Overpass";
+  ctx.fillStyle = "black";
+  var text2 = "web developer"
+  ctx.fillText(text2, canvas.width/3 + 50, canvas.height/2 + 120)
+
   }
 
   init();

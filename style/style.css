@@ -96,9 +96,9 @@ ul {
 }
 .dropdown-content a:hover {background-color: #f1f1f1}
 .wrap {margin-top: 4em;}
+
 /* large navbar */
 #nav {
-  position: relative;
   font-family: 'Overpass', sans-serif;
   width: 80%;
   max-width: 55em;
