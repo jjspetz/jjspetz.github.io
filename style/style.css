@@ -21,6 +21,12 @@ body {position:relative;}
   border-radius: 50%;
   margin: 0.5em;
 }
+canvas {
+  margin-top: 52px;
+  border: 2px solid black;
+  background-color: lightgray;
+  border-radius: 5px;
+}
 .contact-box {
   clear: both;
 }
