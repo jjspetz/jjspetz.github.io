@@ -1,8 +1,8 @@
 window.onload = function() {
-  var canvas = document.getElementById('canvas');
+  var canvas = document.getElementById('nav-canvas');
 
   canvas.width = window.innerWidth;
-  canvas.height = width.innerHeight;
+  canvas.height = 37;
 
   var ctx = canvas.getContext('2d');
 
@@ -29,7 +29,7 @@ window.onload = function() {
   // resize listener
   window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = 37;
 
     init();
   });
@@ -42,7 +42,7 @@ window.onload = function() {
     this.dy = dy;
     this.radius = radius;
     this.minRadius = radius;
-    this.maxRadius = 40;
+    this.maxRadius = 12;
     this.color = colorPalate[Math.floor(Math.random()*colorPalate.length)];
 
     this.draw = function() {
@@ -66,7 +66,7 @@ window.onload = function() {
       this.diffX = mouse.x - this.x;
       this.diffY = mouse.y - this.y;
       this.distance = Math.sqrt((this.diffX * this.diffX) + (this.diffY * this.diffY));
-      if (this.distance < 100) {
+      if (this.distance < 80) {
         if (this.radius < this.maxRadius) {
           this.radius += 1;
         }
@@ -85,8 +85,8 @@ window.onload = function() {
   // creates the initial circles on load and resize
   function init() {
     circleArray = [];
-    for (var i = 0; i < (canvas.width + canvas.height)/ 10; i++) {
-      var radius = Math.random() * 15 + 5; // creates radius between 5 and 20
+    for (var i = 0; i < (canvas.width + canvas.height)/ 8; i++) {
+      var radius = Math.random() * 3 + 2; // creates radius between 2 and 5
       var x = Math.random() * (canvas.width - radius * 2) + radius;
       var y = Math.random() * (canvas.height - radius * 2) + radius;
       var dx = (Math.random() - 0.5) * 2; // creates change of x from -1 to 1
@@ -107,4 +107,5 @@ window.onload = function() {
 
   init();
   animate();
+  $('#nav').css('z-index', '10000')
 }
