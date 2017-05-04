@@ -1,10 +1,10 @@
 window.onload = function() {
-  var canvas = document.getElementById('nav-canvas');
+  var c = document.getElementById('nav-canvas');
 
-  canvas.width = window.innerWidth;
-  canvas.height = 37;
+  c.width = window.innerWidth;
+  c.height = 37;
 
-  var ctx = canvas.getContext('2d');
+  var context = c.getContext('2d');
 
   colorPalate = [
     '#636153',
@@ -28,8 +28,8 @@ window.onload = function() {
   });
   // resize listener
   window.addEventListener('resize', function() {
-    canvas.width = window.innerWidth;
-    canvas.height = 37;
+    c.width = window.innerWidth;
+    c.height = 37;
 
     init();
   });
@@ -46,17 +46,17 @@ window.onload = function() {
     this.color = colorPalate[Math.floor(Math.random()*colorPalate.length)];
 
     this.draw = function() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-      ctx.fillStyle = this.color;
-      ctx.fill();
+      context.beginPath();
+      context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+      context.fillStyle = this.color;
+      context.fill();
     };
 
     this.update = function() {
-      if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+      if (this.x + this.radius > c.width || this.x - this.radius < 0) {
         this.dx = -this.dx
       }
-      if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+      if (this.y + this.radius > c.height || this.y - this.radius < 0) {
         this.dy = -this.dy
       }
       this.x += this.dx;
@@ -85,10 +85,10 @@ window.onload = function() {
   // creates the initial circles on load and resize
   function init() {
     circleArray = [];
-    for (var i = 0; i < (canvas.width + canvas.height)/ 8; i++) {
+    for (var i = 0; i < (c.width + c.height)/ 8; i++) {
       var radius = Math.random() * 3 + 2; // creates radius between 2 and 5
-      var x = Math.random() * (canvas.width - radius * 2) + radius;
-      var y = Math.random() * (canvas.height - radius * 2) + radius;
+      var x = Math.random() * (c.width - radius * 2) + radius;
+      var y = Math.random() * (c.height - radius * 2) + radius;
       var dx = (Math.random() - 0.5) * 2; // creates change of x from -1 to 1
       var dy = (Math.random() - 0.5) * 2; // creates change of y from -1 to 1
 
@@ -98,7 +98,7 @@ window.onload = function() {
 
   function animate() {
     requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, c.width, c.height);
 
     for(var i=0; i<circleArray.length; i++) {
       circleArray[i].update();

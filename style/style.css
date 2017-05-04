@@ -13,7 +13,13 @@ Everything listed in these catagories is in alphabetical order.
 */
 
 /*Main Window*/
-
+#astroids {
+  display: block;
+  margin: 7em auto 4em auto;
+  width: 700px;
+  height: 500px;
+  background-color: black;
+}
 .button {
   float: right;
   width: 5em;
@@ -127,8 +133,8 @@ ul {
   z-index: 2;
 }
 #nav-canvas {
-  background-color: lightgray;
   z-index: 1;
+  background-color: lightgray;
   border-bottom: 2px solid black;
   position: fixed;
   top: 0;
