@@ -171,7 +171,7 @@ function menu(count=0, counter=0, first=true) {
   if (first) {
     clear();
     ctx.fillText("Use the W,A,S, and D keys to avoid the astroids", canvas.width/2, canvas.height/2 -80);
-    ctx.fillText("Press SPACE to begin.", canvas.width/2, canvas.height/2);
+    ctx.fillText("Press ENTER to begin.", canvas.width/2, canvas.height/2);
     ctx.font = "18px Arial";
     ctx.fillText("by JJ Spetseris", canvas.width/2, canvas.height/2 + 120);
   }
@@ -181,7 +181,7 @@ function menu(count=0, counter=0, first=true) {
       clear();
       var text = "You survived for "+  count/50 + " seconds.";
       ctx.fillText(text, canvas.width/2, canvas.height/2);
-      ctx.fillText("Press SPACE to begin.", canvas.width/2, canvas.height/2 + 100);
+      ctx.fillText("Press ENTER to begin.", canvas.width/2, canvas.height/2 + 100);
       }, 30); // makes sure clear is delayed long enough for clearInterval to fire
 
   }
