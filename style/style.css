@@ -16,10 +16,10 @@ Everything listed in these catagories is in alphabetical order.
 #astroids {
   display: block;
   margin: 7em auto 4em auto;
-  width: 85%;
-  height: 50%;
-  min-width: 400px;
-  min-height: 300px;
+  width: 70%;
+  max-height: 800px;
+  min-width: 300px;
+  min-height: 250px;
   background-color: black;
 }
 .button {
@@ -220,10 +220,17 @@ ul {
   #nav-bar {display: none;}
   .dropdown {display: block;}
   .img-circle {margin-top: -2em;}
+  #astroids {
+    margin-top: 2em;
+    width: 85%;
+  }
 }
 @media screen and (max-width: 480px) {
   /*deletes some information on small screens*/
   .left {min-width: 24em; width: 90%}
   .rwd-line {display:none;}
   .right {min-width: 24em; width: 90%}
+  #astroids {
+    width: 96%;
+  }
 }
