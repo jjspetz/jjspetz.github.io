@@ -16,8 +16,10 @@ Everything listed in these catagories is in alphabetical order.
 #astroids {
   display: block;
   margin: 7em auto 4em auto;
-  width: 700px;
-  height: 500px;
+  width: 85%;
+  height: 60%;
+  min-width: 400px;
+  min-height: 400px;
   background-color: black;
 }
 .button {
@@ -124,6 +126,9 @@ ul {
 }
 #nav a:hover {
   background-color: #EEE;
+}
+.nav-head a:hover {
+  background-color: white !important;
 }
 #nav-bar {
   position: fixed;

@@ -9,8 +9,8 @@
   var ctx = canvas.getContext('2d');
 
   // set canvas width and height to width and height of screen
-  canvas.width = 700;
-  canvas.height = 500;
+  canvas.width = 600;
+  canvas.height = 400;
 
   // builds list of astroid sources
  var astroidName = [
