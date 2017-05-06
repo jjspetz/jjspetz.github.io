@@ -205,6 +205,8 @@ this.ship = new Ship('images/spaceship.png', canvas.width/2, canvas.height/2)
 // event listener
 window.addEventListener('keyup', function(event) { Key.onKeyup(event); }, false);
 window.addEventListener('keydown', function(event) { Key.onKeydown(event); }, false);
+window.addEventListener('touchend', function(event) { Key.onKeydown(65); }, false);
+
 
 // start game loop
 function main()  {
