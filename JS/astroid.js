@@ -187,7 +187,7 @@ function menu(count=0, counter=0, first=true) {
   }
 
 var temp = setInterval (function() {
-  if (Key.isDown(Key.SPACE) || Key.isDown(13)) {
+  if (Key.isDown(Key.SPACE) || Key.isDown(13) || Key.isDown(65)) {
     clearInterval(temp);
     main();
 
@@ -206,7 +206,6 @@ this.ship = new Ship('images/spaceship.png', canvas.width/2, canvas.height/2)
 window.addEventListener('keyup', function(event) { Key.onKeyup(event); }, false);
 window.addEventListener('keydown', function(event) { Key.onKeydown(event); }, false);
 window.addEventListener('touchend', function(event) { Key.onKeydown(65); }, false);
-
 
 // start game loop
 function main()  {
