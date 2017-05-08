@@ -10,7 +10,7 @@
 
   // set canvas width and height to width and height of screen
   canvas.width = 900;
-  canvas.height = 650;
+  canvas.height = 600;
 
   // builds list of astroid sources
  var astroidName = [
