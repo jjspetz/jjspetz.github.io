@@ -1,77 +1,198 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>JJ Spetseris</title>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Profile Page">
+    <meta name="author" content="JJ Spetseris">
 
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>JJ Spetseris</title>
 
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Overpass|Source+Sans+Pro"
-    rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-  </head>
-  <canvas id="nav-canvas"></canvas>
-  <body>
-    <!--Large navigation menu-->
-    <div id="nav-bar">
-      <ul id="nav">
-        <li><h4 class="nav-head"><a href='index.html'>JJ Spetseris</a></h4></li>
-        <li><h4 class="nav-head">|</h4></li>
-        <li><a href="about.html"><h4>ABOUT</h4></a></li>
-        <li><a href="work.html"><h4>WORK</h4></a></li>
-        <li><a href="resume.html"><h4>RESUME</h4></a></li>
-        <li><a href="#contact"><h4>CONTACT</h4></a></li>
-      </ul>
-    </div>
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
-    <!--Small navbutton-->
-    <div class="dropdown">
-      <button class="dropbtn">
-        <div class="menuicon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">JJ Spetseris</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </button>
-      <div class="dropdown-content">
-        <a href="about.html">ABOUT</a>
-        <a href="work.html">WORK</a>
-        <a href="resume.html">RESUME</a>
-        <a href="#contact">CONTACT</a>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">JJ Spetseris</h1>
+                        <p class="intro-text">A Full-Stack Developer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fluid-container content-section text-justified">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img src='img/me.jpg'>
+                <h2>About Me</h2>
+                <p>Hi, I'm JJ. I am a software developer. I recently returned to
+                   America after living overseas. I enjoy clean and readable code
+                   and studying new languages and frameworks. I am currently
+                   learning as much as I can, at DigitalCrafts Bootcamp. I am
+                   available for open source projects or freelance work. When I
+                    am not coding, I like listening to music, traveling, and
+                    learning new things.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section text-justified">
+      <div class="portfolio-section">
+        <h2>My Projects</h2><br>
+            <div class="row">
+              <div class="col-md-6">
+                <p data-height="480" data-theme-id="0" data-slug-hash="OWXoeO" data-default-tab="result" data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Kid's Calculator" class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/OWXoeO/">FCC: Kid's Calculator</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <p class="project-blurb">This is a javascript calculator I made while working through
+                <a href="https://www.freecodecamp.com/">freecodecamp</a>'s front-end
+                course. I made this particular project while I was teaching so the
+                design was inspired by my students' calculator and thier lust for stickers.
+                I used jQuery extensively on this project. I learned a lot about the
+                potential perils of accepting user input and some of the limitations
+                computers have with floating point math.</p>
+              </div>
+              <div class="col-md-6">
+                <p data-height="480" data-theme-id="0" data-slug-hash="yVNjLK" data-default-tab="result" data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Random Quote Machine" class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/yVNjLK/">FCC: Random Quote Machine</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <p class="project-blurb"> Another project from
+                <a href="https://www.freecodecamp.com/">freecodecamp</a>'s front-end
+                course. This was my first attempy using an API. The random quote machine
+                makes an ajax request and returns a new random quote with each click of
+                the button. It also changes the color randomly. The qoute can be twitteed as well.
+                I used HTML, CSS and JS to make this project.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <p data-height="480" data-theme-id="0" data-slug-hash="LxpbgM" data-default-tab="result" data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Wikipedia Viewer" class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/LxpbgM/">FCC: Wikipedia Viewer</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <p class="project-blurb"> Yet Another project from
+                <a href="https://www.freecodecamp.com/">freecodecamp</a>'s front-end
+                course. This is a simple project using the wikipedia API. It uses HTML, CSS,
+                JS, and jQuery.</p>
+              </div>
+              <div class="col-md-6">
+                <p data-height="480" data-theme-id="0" data-slug-hash="WpWxov" data-default-tab="result" data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Pomodoro Clock" class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/WpWxov/">FCC: Pomodoro Clock</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <p class="project-blurb"> Sensing a theme yet? The Pomodoro clock uses
+                HTML, CSS, and jQuery. The clock allows the user to enter two different
+                times and alternates between the two.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!--Landing Page-->
-    <div class="container-fluid">
-      <canvas id="astroids"></canvas>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Info</h2>
+                <p>Feel free to email me with comments, or just to say hello.</p>
+                <p><a href="mailto:jj.spetseris@yahoo.com">jj.spetseris@yahoo.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://codepen.io/jjspetz/" target='_blank' class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jjspetz" target='_blank' class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jjspetz/" target='_blank' class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linked in</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!--Contacts-->
-    <div class="container">
-    <a name="contact"></a>
-    <div class="contact-box">
-      <a href="http://www.google.com/recaptcha/mailhide/d?k=01wQY3l1IWnwbt_ewEpWYL-g==&amp;c=XezvxzTRmXKszPofp0Rs05u1OOeMwjJ51efpPrVSiDY=
-      " onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01wQY3l1IWnwbt_ewEpWYL-g\x3d\x3d\x26c\x3dXezvxzTRmXKszPofp0Rs05u1OOeMwjJ51efpPrVSiDY\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
-      title="Reveal this e-mail address">
-      <img class="button" src="http://www.freeiconspng.com/uploads/file-tk-email-icon-svg-28.png" alt="email button"></a>
-      <a title="codepen" alt="codepen link" href="https://www.codepen.io/jjspetz" target="blank">
-        <img class="button" src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png">
-      </a>
-      <a title="linkedin" alt="linked in link" href="https://www.linkedin.com/in/john-spetseris-42910716" target="blank">
-        <img class="button" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png">
-      </a>
-      <a title="github" alt="github link" href="https://github.com/jjspetz" target="_blank">
-        <img class="button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png">
-      </a>
-    </div>
-    </div>
-  </body>
-  <script src="JS/astroid.js"></script>
-  <script src="JS/canvas-nav.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
 
 </html>
