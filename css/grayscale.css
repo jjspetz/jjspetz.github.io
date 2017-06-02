@@ -22,7 +22,7 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Doppio One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -56,7 +56,7 @@ a:focus {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Doppio One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
@@ -137,6 +137,7 @@ a:focus {
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
+  text-transform: none;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
@@ -148,6 +149,7 @@ a:focus {
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
+    text-transform: none;
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
@@ -235,7 +237,7 @@ a:focus {
 .portfolio-section h2 {
   text-align: center;
 }
-.portfolio-section p {
+.project-blurb {
   padding: 1%;
 }
 
@@ -246,7 +248,7 @@ a:focus {
 }
 .btn {
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Doppio One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
