@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
+  margin: 0 0 35px 0;
   text-transform: uppercase;
   font-family: "Doppio One", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -314,4 +314,7 @@ body {
   float: right;
   border-radius: 5px;
   padding-left: 3%;
+}
+.tech-icons {
+  font-size: 75px;
 }
