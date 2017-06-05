@@ -124,7 +124,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/landscape.jpg) no-repeat bottom center scroll;
+  background: url(../img/night-sky.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -317,4 +317,11 @@ body {
 }
 .tech-icons {
   font-size: 75px;
+}
+#contact {
+  background: url(../img/northern-lights.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
