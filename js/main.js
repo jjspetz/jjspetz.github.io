@@ -8,8 +8,19 @@ function collapseNavbar() {
     }
 }
 
+function studyTime() {
+  // calculates a rough estimate of the hours I have studied this year
+  var now = new Date();
+  var currentYear = now.getFullYear();
+  var then = new Date("January 1, "+currentYear+" 00:00:00");
+  var week = 604800000; // in miliseconds
+  var studyHours = Math.round((now - then) * 40 / week);
+  document.getElementById("hrs").innerHTML = studyHours;
+}
+
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
+$(document).ready(studyTime);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
