@@ -221,11 +221,11 @@ a:focus {
 }
 .content-section {
   padding-top: 100px;
-  padding-bottom: 25px;
+  padding-bottom: 75px;
 }
 .portfolio-section {
   width: 100%;
-  padding: 80px 10px;
+  padding: 150px 10px;
   color: white;
   background: url(../img/keyboard.jpg) no-repeat center center scroll;
   background-color: black;
@@ -244,8 +244,8 @@ a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 150px;
-    padding-bottom: 40px;
+    padding-top: 200px;
+    padding-bottom: 150px;
   }
 }
 .btn {
@@ -314,13 +314,16 @@ body {
 }
 #about img {
   float: right;
-  border-radius: 5px;
+  border-radius: 50%;
   padding-left: 3%;
 }
 .tech-icons {
   font-size: 75px;
+  letter-spacing: 10px;
 }
 #contact {
+  height: 55%;
+  width: auto;
   background: url(../img/northern-lights.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
