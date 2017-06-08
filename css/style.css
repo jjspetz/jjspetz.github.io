@@ -239,7 +239,7 @@ a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 200px 2% 150px 2%;
+    padding: 200px 4% 150px 4%;
   }
 }
 .btn {
@@ -330,9 +330,8 @@ body {
   letter-spacing: normal;
 }
 #contact {
-  height: 55%;
-  width: auto;
-  background: url(../img/northern-lights.jpg) no-repeat center center scroll;
+  height: 60%;
+  background: url(../img/northern-lights.jpg) no-repeat top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
