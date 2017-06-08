@@ -8,13 +8,13 @@ function collapseNavbar() {
     }
 }
 
-function studyTime() {
+var studyTime = () => {
   // calculates a rough estimate of the hours I have studied this year
   var now = new Date();
   var currentYear = now.getFullYear();
   var then = new Date("January 1, "+currentYear+" 00:00:00");
   var week = 604800000; // in miliseconds
-  var studyHours = Math.round((now - then) * 40 / week);
+  var studyHours = Math.round((now - then) * 50 / week);
   document.getElementById("hrs").innerHTML = studyHours;
 }
 
