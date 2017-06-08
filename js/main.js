@@ -14,7 +14,7 @@ var studyTime = () => {
   var currentYear = now.getFullYear();
   var then = new Date("January 1, "+currentYear+" 00:00:00");
   var week = 604800000; // in miliseconds
-  var studyHours = Math.round((now - then) * 50 / week);
+  var studyHours = Math.round((now - then) * 40 / week);
   document.getElementById("hrs").innerHTML = studyHours;
 }
 
