@@ -14,13 +14,27 @@ var studyTime = () => {
   var currentYear = now.getFullYear();
   var then = new Date("January 1, "+currentYear+" 00:00:00");
   var week = 604800000; // in miliseconds
-  var studyHours = Math.round((now - then) * 40 / week);
+  var studyHours = Math.round((now - then) * 45 / week);
   document.getElementById("hrs").innerHTML = studyHours;
 }
+
+var gitCommits = function() {
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://api.jjspetseris.com/",
+    "method": "GET",
+  }
+
+  $.ajax(settings).done(function (response) {
+    document.getElementById("commits").innerHTML = response.commits;
+  });
+  }
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 $(document).ready(studyTime);
+$(document).ready(gitCommits);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
