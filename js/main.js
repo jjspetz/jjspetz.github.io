@@ -22,7 +22,7 @@ var gitCommits = function() {
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://api.jjspetseris.com/",
+    "url": "https://api.jjspetseris.com/",
     "method": "GET",
   }
 
