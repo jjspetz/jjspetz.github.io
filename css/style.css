@@ -222,7 +222,7 @@ a:focus {
   width: 100%;
   padding: 150px 10px;
   color: white;
-  background: url(../img/keyboard.jpg) no-repeat center center scroll;
+  background: url(../img/keyboard.jpg) no-repeat center fixed;
   background-color: black;
   text-shadow: 1px 1px black;
   -webkit-background-size: cover;
