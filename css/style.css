@@ -234,7 +234,7 @@ a:focus {
   text-align: center;
 }
 .project-blurb {
-  padding: 1%;
+  padding: 2%;
 }
 
 @media (min-width: 767px) {
