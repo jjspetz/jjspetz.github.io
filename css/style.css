@@ -234,6 +234,7 @@ a:focus {
   text-align: center;
 }
 .project-blurb {
+  text-align: justify;
   padding: 2%;
 }
 
@@ -337,4 +338,108 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+/****** Featured Projects CSS ******/
+.grid {
+	padding: 0 0 100px 0;
+	max-width: 1300px;;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+.grid li {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 10px 10px 10px 0;
+	text-align: left;
+	position: relative;
+}
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+.grid figcaption {
+	position: absolute;
+  box-sizing: border-box;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	background: #333;
+	color: #818181;
+  font-size: 23px;
+}
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+  font-size: 28px;
+}
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #fff;
+	color: #673AB6;
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+/* hover effects */
+.thumbnail-hvr li {
+	perspective: 1700px;
+	perspective-origin: 0 50%;
+}
+.thumbnail-hvr figure {
+	transform-style: preserve-3d;
+}
+.thumbnail-hvr figure > div {
+	overflow: hidden;
+}
+.thumbnail-hvr figure img {
+	transition: 0.4s;
+}
+.thumbnail-hvr figure:hover img {
+	transform: translateX(-25%);
+  filter: grayscale(80%);
+}
+.thumbnail-hvr figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	backface-visibility: hidden;
+	transform-origin: 100% 0;
+	transform: rotateY(-90deg);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.thumbnail-hvr figure:hover figcaption {
+	opacity: 1;
+	transform: rotateY(0deg);
+	transition: transform 0.4s, opacity 0.1s;
+}
+.thumbnail-hvr figcaption a {
+  position: absolute;
+  bottom: 10px;
+
+  text-decoration: none;
+}
+.thumbnail-hvr figcaption a.repo {
+	right: 10px;
+}
+.thumbnail-hvr figcaption a.demo {
+	right: 95px;
 }
