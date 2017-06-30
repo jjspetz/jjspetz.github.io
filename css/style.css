@@ -238,6 +238,13 @@ a:focus {
   padding: 2%;
 }
 
+@media (max-width: 1350px) and (min-width: 980px) {
+  .project-blurb {
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+}
+
 @media (min-width: 767px) {
   .content-section {
     padding: 200px 4% 150px 4%;
