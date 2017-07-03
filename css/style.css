@@ -397,15 +397,6 @@ body {
 	color: #42DCA3;
 }
 
-@media screen and (max-width: 31.5em) {
-	.grid {
-		padding: 10px 10px 100px 10px;
-	}
-	.grid li {
-		width: 100%;
-		min-width: 300px;
-	}
-}
 /* hover effects */
 .thumbnail-hvr li {
 	perspective: 1700px;
@@ -432,6 +423,18 @@ body {
 	transform-origin: 100% 0;
 	transform: rotateY(-90deg);
 	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+@media (max-width: 767px) {
+  .thumbnail-hvr figcaption span{
+      font-size: 11pt;
+  }
+  .grid {
+    padding: 15px 10px 0 10px;
+  }
+  .grid li {
+    width: 100%;
+    min-width: 300px;
+  }
 }
 .thumbnail-hvr figure:hover figcaption {
 	opacity: 1;
