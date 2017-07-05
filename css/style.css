@@ -240,7 +240,7 @@ a:focus {
 
 @media (max-width: 1350px) and (min-width: 980px) {
   .project-blurb {
-    max-height: 450px;
+    max-height: 420px;
     overflow-y: scroll;
   }
 }
