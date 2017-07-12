@@ -18,20 +18,18 @@ var studyTime = () => {
   document.getElementById("hrs").innerHTML = studyHours;
 }
 
+var gitCommits = function() {
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.jjspetseris.com/",
+    "method": "GET",
+  }
 
-// fix github-yearly-contributes and un comment
-// var gitCommits = function() {
-//   var settings = {
-//     "async": true,
-//     "crossDomain": true,
-//     "url": "https://api.jjspetseris.com/",
-//     "method": "GET",
-//   }
-//
-//   $.ajax(settings).done(function (response) {
-//     document.getElementById("commits").innerHTML = response.commits;
-//   });
-//   }
+  $.ajax(settings).done(function (response) {
+    document.getElementById("commits").innerHTML = response.commits;
+  });
+  }
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
