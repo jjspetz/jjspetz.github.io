@@ -136,6 +136,47 @@
       <div class="portfolio-section">
         <h2>Featured Projects</h2><br>
 
+        <!-- Project Manager -->
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <h3> Project Manager <h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-block">
+            <img src="img/projectmanager.png" alt="Project Manager Screen Shot">
+            <div class='button-bar'>
+              <a class="depo btn btn-default btn-lg" href="https://todo.jjspetseris.com" target="_blank">Demo</a>
+              <a class="repo btn btn-default btn-lg" href="https://github.com/jjspetz//project-manager" target="_blank">Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <p class="project-blurb">
+                This is a web app I built for DigitalCrafts' individual project week.
+                It is build with React, Redux, React dnd, Firebase, and Material UI.
+                Major Features of the app include multiple social login options, a live
+                sync database, and a drag and drop UI.
+              <br><br>
+                I chose to make a project manager resembling Github's built in project
+                manager or Trello, and this is what I have so far. It still lacks some
+                of the functionality of those apps, but I did obtain my goal of solidifying
+                my understanding of React and Redux. Before this project the 'Redux way'
+                in general and the way props would be mapped to React states was hard
+                for me to follow, but know I can add new props and dispatches with relative
+                ease.
+              <br><br>
+                I also learned about the unfortunate state of drag and drop UI in react.
+                Currently there does not seem to be a good backend that handles both
+                desktop and mobile versions, just one or the other. I hope to implement
+                my own work around soon. NOTICE: Demo version only works on desktop.
+              </p>
+            </div>
+        </div>
+      </div>
+
             <!-- Do I Want to Eat There? -->
           <div class="row">
             <div class="col-md-6 text-center">
@@ -217,78 +258,7 @@
                 </div>
             </div>
           </div>
-          <br>
-        <h2>Other Projects</h2><br>
-            <div class="row">
-              <div class="col-md-6">
-                <p data-height="480" data-theme-id="0" data-slug-hash="OWXoeO" data-default-tab="result"
-                data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Kid's Calculator"
-                class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/OWXoeO/">
-                FCC: Kid's Calculator</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>)
-                on <a href="http://codepen.io">CodePen</a>.</p>
-                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                <p class="project-blurb"> This is a javascript calculator I made while working through
-                <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>'s front-end
-                course. I made this particular project while I was teaching so the
-                design was inspired by my students' calculators and their lust for stickers.
-                I used jQuery extensively on this project. I learned a lot about the
-                potential perils of accepting user input and some of the limitations
-                JavaScript has with floating point math. I decided to handle all the displays
-                and storage of variables as strings that could be passed around from
-                function to function. This also allowed me to use regular expressions
-                to manipulate the string. This led to the challenge of how to do the actual math.
-                1 + 1 as a string equals 11 not 2, so i eventually turned to the eval function.
-                The simplicity of this method outweighed security concerns, since users can only
-                enter numbers and a limited number of math equations.</p>
-              </div>
-              <div class="col-md-6">
-                <p data-height="480" data-theme-id="0" data-slug-hash="WjaGLd" data-default-tab="result"
-                data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Tic Tac Toe"
-                class="codepen">See the Pen <a href="https://codepen.io/jjspetz/pen/WjaGLd/">
-                FCC: Tic Tac Toe</a> by JJ Spetseris (<a href="https://codepen.io/jjspetz">@jjspetz</a>)
-                on <a href="https://codepen.io">CodePen</a>.</p>
-                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                <p class="project-blurb"> This is a Tic-Tac-Toe game I made while working through
-                <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>'s front-end
-                course. This game features single-player or two-player hotseat mode.
-                The game also features a competitive but beatable AI. Challenges faced while writing
-                this code included how to make an AI that would be fun to play, not
-                too easy or too hard. The game is built completely with HTML, CSS, and JavaScript.
-                To see more check out the full code on <a href='https://github.com/jjspetz/Tic-Tac-Toe'>GitHub</a>.</p>
-              </div>
 
-            </div>
-            <!-- <div class="row">
-            <div class="col-md-6">
-              <p data-height="480" data-theme-id="0" data-slug-hash="yVNjLK" data-default-tab="result"
-              data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Random Quote Machine"
-              class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/yVNjLK/">
-              FCC: Random Quote Machine</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>)
-              on <a href="http://codepen.io">CodePen</a>.</p>
-              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-              <p class="project-blurb"> Another project from
-              <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>'s front-end
-              course. This was my first attempt using an API. The random quote machine
-              makes an AJAX request and returns a new random quote with each click of
-              the button. It also changes the color randomly. The quote can be tweeted as well.
-              I used HTML, CSS, JavaScript, and jQuery to make this project. It taught me a lot
-              about using API's and callbacks in JavaScript. A Challenge I faced while making
-              this app included understanding callbacks. I needed my random change in background
-              color to fire only after the new quote is displayed and a callback was my solution.
-              If I were to make this app again I would most likely use a promise instead.</p>
-            </div>
-              <div class="col-md-6">
-                <p data-height="480" data-theme-id="0" data-slug-hash="WpWxov" data-default-tab="result"
-                data-user="jjspetz" data-embed-version="2" data-pen-title="FCC: Pomodoro Clock"
-                class="codepen">See the Pen <a href="http://codepen.io/jjspetz/pen/WpWxov/">
-                FCC: Pomodoro Clock</a> by JJ Spetseris (<a href="http://codepen.io/jjspetz">@jjspetz</a>)
-                on <a href="http://codepen.io">CodePen</a>.</p>
-                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                <p class="project-blurb"> Sensing a theme yet? The Pomodoro clock uses
-                HTML, CSS, and jQuery. The clock allows the user to enter two different
-                times and alternates between the two.</p>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
