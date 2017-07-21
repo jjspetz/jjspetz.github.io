@@ -8,6 +8,15 @@ function collapseNavbar() {
     }
 }
 
+var typed = () => {
+    return new Typed('.typed', {
+    strings: ["Full-Stack Developer", "Hackathon Organizer", "Lifelong Learner", "Gym Avoider"],
+    typeSpeed: 60,
+    loop: true,
+    loopCount: Infinity,
+  });
+}
+
 var studyTime = () => {
   // calculates a rough estimate of the hours I have studied this year
   var now = new Date();
@@ -35,6 +44,7 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 $(document).ready(studyTime);
 $(document).ready(gitCommits);
+$(document).ready(typed);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
