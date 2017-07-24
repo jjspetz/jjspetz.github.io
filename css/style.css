@@ -324,6 +324,15 @@ body {
     display: none;
   }
 }
+.projectTitle {
+  margin-top: 25px;
+}
+@media (max-width: 920px) {
+  .projectTitle {
+    margin-top: 12px;
+  }
+
+}
 .tech-icons {
   font-size: 75px;
   text-align: center;
