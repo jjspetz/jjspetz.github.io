@@ -10,7 +10,7 @@ function collapseNavbar() {
 
 var typed = () => {
     return new Typed('.typed', {
-    strings: ["Full-Stack Developer", "Hackathon Organizer", "Lifelong Learner", "Gym Avoider"],
+    strings: ["Full-Stack Developer", "Hackathon Organizer", "Lifelong Learner", "Gamer", "Gym Avoider"],
     typeSpeed: 60,
     loop: true,
     loopCount: Infinity,
