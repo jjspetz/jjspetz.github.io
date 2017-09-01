@@ -381,3 +381,22 @@ body {
   position: relative;
   height: 65px;
 }
+.img-responsive {
+
+}
+.otherProjects {
+  display: block;
+  margin: 0 auto;
+}
+
+/****** Carosule CSS ******/
+/*mainly resets the overall themes to default*/
+.carousel-inner h2, .carousel-inner h3 {
+  margin: 25px 0 0 0;
+  text-align: left;
+  line-height: 1.5;
+}
+.carousel-inner li {
+  margin: 0;
+  line-height: 1.5;
+}
