@@ -381,3 +381,12 @@ body {
   position: relative;
   height: 65px;
 }
+.otherProjects {
+  display: block;
+  margin: 0 auto;
+}
+
+/****** More Projects Link CSS ******/
+.moreProjects {
+  margin: 15px auto;
+}
