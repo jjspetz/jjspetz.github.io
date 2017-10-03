@@ -24,7 +24,7 @@ var studyTime = () => {
   var then = new Date("January 1, "+currentYear+" 00:00:00");
   var week = 604800000; // in miliseconds
   var studyHours = Math.round((now - then) * 45 / week);
-  document.getElementById("hrs").innerHTML = studyHours;
+  // document.getElementById("hrs").innerHTML = studyHours;
 }
 
 var gitCommits = function() {
