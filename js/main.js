@@ -42,7 +42,7 @@ var gitCommits = function() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
-$(document).ready(studyTime);
+// $(document).ready(studyTime);
 $(document).ready(gitCommits);
 $(document).ready(typed);
 
